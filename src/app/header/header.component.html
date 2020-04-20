@@ -1,0 +1,29 @@
+<nav class="navbar navbar-expand-lg navbar-light">
+
+    <div class="container">
+
+        <a class="navbar-brand" href="#">
+            <fa-icon [icon]="faChess" class="faChess fa-2x"></fa-icon>
+            Clube do Xadrez
+        </a>
+        <button class="navbar-toggler btnRotate" type="button" data-toggle="collapse" data-target="#navbarSite">
+            <fa-icon [icon]="faAngleDown" class="faAngleDown fa-2x"></fa-icon>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSite">
+            <ul class="navbar-nav links">
+                <li class="navbar-item">
+                    <a class="nav-link home" routerLink='/home'>Home</a>
+                </li>
+                <li class="navbar-item">
+                    <a class="nav-link contact" routerLink='/contact'>Contato</a>
+                </li>
+                <li class="navbar-item">
+                    <a class="nav-link comment" routerLink='/comment'>Comentários</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+</nav>

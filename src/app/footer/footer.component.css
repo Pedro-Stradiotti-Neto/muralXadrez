@@ -1,0 +1,20 @@
+footer {
+    line-height: 60px;
+    background-color: #f5f5f5;
+}
+
+.icons a:visited {
+    color: rgb(33, 37, 41);
+}
+
+.icons a .iconG{
+    margin-right: 1em;
+}
+
+.icons a .iconG:hover {
+    color: rgb(0, 0, 0, 0.7);
+}
+
+.icons a .iconL:hover {
+    color:rgb(0, 87, 134);
+}
