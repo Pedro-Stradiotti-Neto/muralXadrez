@@ -8,10 +8,6 @@ nav {
     transition: transform 1s;
 }
 
-.btnRotate:focus {
-    transform: rotate(-180deg)
-}
-
 .links {
     margin-left: 2em;
 
@@ -20,10 +16,6 @@ nav {
 .links li {
     margin-top: 1em;
     margin-right: 1em;
-}
-
-.links li .home:hover {
-    text-decoration-line: underline;
 }
 
 .links li .contact:hover {

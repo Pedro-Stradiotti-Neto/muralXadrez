@@ -1,16 +1,69 @@
 <main>
-    <div class="container">
-        <div class="row mt-4 mb-4">
+    <div class="container mb-5">
+        <div class="row mt-5 mb-4">
             <div class="col-md-12">
                 <h1 class="text-center">Sejam bem vindes ao Clube do Xadrez</h1>
             </div>
         </div>
 
+        <div class="row">
+            <div class="col-md-12">
+                <p class="text-justify">
+                    O Clube do Xadrez, destina-se a interligar as pessoas que querem jogar xadrez, independente do nivel
+                    do conhecimento do mesmo. Podendo enviar um email a uma das pessoas que já deixaram seu comentário
+                    ou até mesmo deixar seu email de contato, para combinar horários para jogarem juntos ou até mesmo
+                    conhecere novas pessoas com a mesma vontade de aprender xadrez.
+                </p>
+
+                <p class="text-justify">
+                    Mas também, o Clube do Xadrez deixa algumas dicas de jogadas possíveis dentro do Xadrez,
+                    porém o modo como poderão utiliza-las durante os seus jogos, vem da sua mente e lógica.
+                </p>
+            </div>
+        </div>
+
+        <div class="row mt-5 mb-4">
+            <div class="col-md-12">
+                <h1 class="text-center">O que é o Xadrez?</h1>
+            </div>
+        </div>
         <div class="row mb-4">
             <div class="col-md-12">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, nisi assumenda soluta
-                    voluptatum sint nihil tempore veritatis aperiam omnis quod accusantium repudiandae qui amet
-                    blanditiis! Repudiandae minima cupiditate nemo accusantium?</p>
+                <p class="text-justify">
+                    O que é o Xadrez? É um esporte, porém também é considerado uma arte e uma ciência, devido a sua
+                    variedade de jogadas possíveis. Pode ser classificado como um jogo de
+                    tabuleiro de natureza recreativa ou competitiva para dois jogadores.
+                </p>
+                <p class="text-justify">
+                    O xadrez é disputada em um tabuleiro de casas claras e escuras, sendo que cada jogador controla
+                    dezesseis peças, que se dividem em:
+                </p>
+                <div class="d-flex justify-content-between">
+                    <p>
+                        <fa-icon [icon]="faChessPawn" class="faChessPawn"></fa-icon>
+                        - 08 Peões
+                    </p>
+                    <p>
+                        <fa-icon [icon]="faChessRook" class="faChessRook"></fa-icon>
+                        - 02 Torres
+                    </p>
+                    <p>
+                        <fa-icon [icon]="faChessKnight" class="faChessKnight"></fa-icon>
+                        - 02 Cavalos
+                    </p>
+                    <p>
+                        <fa-icon [icon]="faChessBishop" class="faChessBishop"></fa-icon>
+                        - 02 Bispos
+                    </p>
+                    <p>
+                        <fa-icon [icon]="faChessQueen" class="faChessQueen"></fa-icon>
+                        - 01 Rainha
+                    </p>
+                    <p>
+                        <fa-icon [icon]="faChessKing" class="faChessKing"></fa-icon>
+                        - 01 Rei
+                    </p>
+                </div>
             </div>
         </div>
     </div>
@@ -18,11 +71,92 @@
     <div class="parallax"></div>
 
     <div class="container">
+        <div class="row mt-4 mb-5">
+            <div class="col-md-12">
+                <h1 class="text-center">Seção de Comentários e Dicas</h1>
+            </div>
+
+            <div class="col-md-12 mt-4">
+                <div id="carrouselSite" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item active">
+                            <div class="card col-md-3 border-secondary float-left">
+                                <div class="card-body">
+                                    <h4 class="card-title">Pedro</h4>
+                                    <h5 class="card-subtitle text-muted mb-4">
+                                        <fa-icon [icon]="faChessPawn" class="faChessPawn"></fa-icon>
+                                        Iniciante
+                                    </h5>
+                                    <p class="card-text text-justify">Sou jogador novo, em busca de aprender mais sobre
+                                        o jogo</p>
+                                    <button class="btn btn-outline-secondary float-right">E-mail</button>
+                                </div>
+                            </div>
+                            <div class="card col-md-3 border-secondary float-left ml-3">
+                                <div class="card-body">
+                                    <h4 class="card-title">Hugo</h4>
+                                    <h5 class="card-subtitle text-muted mb-4">
+                                        <fa-icon [icon]='faChessRook' class="faChessRook"></fa-icon>
+                                        Intermediário
+                                    </h5>
+                                    <p class="card-text text-justify">Estou em busca de desafios para aprimorar meu
+                                        estilo de jogo</p>
+                                    <button class="btn btn-outline-secondary float-right">E-mail</button>
+                                </div>
+                            </div>
+                            <div class="card col-md-3 border-secondary float-left ml-3">
+                                <div class="card-body">
+                                    <h4 class="card-title">Alexandre</h4>
+                                    <h5 class="card-subtitle text-muted mb-4">
+                                        <fa-icon [icon]='faChessQueen' class="faChessQueen"></fa-icon>
+                                        Mestre
+                                    </h5>
+                                    <p class="card-text text-justify">Desejo jogar xadrez por diversão, para passar o
+                                        tempo em alguns momentos do dia</p>
+                                    <button class="btn btn-outline-secondary float-right">E-mail</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <h4 class="text-center">Roque Menor</h4>
+                                    <img src="../../assets/rockMenor.png" alt="Roque Menor" class="ml-5">
+                                </div>
+                                <div class="col-md-8 mt-5">
+                                    <p class="text-justify">O rei movimenta-se duas casas em direção da torre de sua
+                                        ala, invertendo a posição das peças na mesa (conforme imagem simulando as peças
+                                        brancas).
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <h4 class="text-center">Roque Maior</h4>
+                                    <img src="../../assets/rockMaior.png" alt="Roque Maior" class="ml-5">
+                                </div>
+                                <div class="col-md-8 mt-5">
+                                    <p class="text-justify">O rei movimenta-se duas casas em direção da torre da ala
+                                        da rainha, invertendo a posição das peças na mesa (conforme imagem simulando
+                                        as peças brancas).
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div class="row mt-4 mb-4">
             <div class="col-md-12">
-                <div id="carrouselSite" class="carousel slide" data-ride="carousel">
-
-                </div>
+                <p class="text-center">Ficou interessado e gostaria de jogar com outras pessoas?<a
+                        routerLink='/comment'> Clique aqui</a>
+                    e deixe seu contato em nosso site, ou manda uma mensagem para uma das pessoas que já deixaram seu
+                    cadastro.</p>
             </div>
         </div>
     </div>

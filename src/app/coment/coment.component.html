@@ -1,1 +1,48 @@
-<p>coment works!</p>
+<main class="mb-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 mt-4">
+                <h2 class="text-center">Deixe seu contato</h2>
+            </div>
+            <div class="col-md-12 mt-4 mb-4">
+                <p>Como não poderia faltar, deixamos esse espaço reservado para você deixar ser contato para jogar com
+                    outras pessoas, aprendendo juntos e se divertindo, como todo jogo deve ser.</p>
+                <p>Após o envio dos dados o mesmo será exibido na pagina inicial, onde qualquer um poderá ver e iniciar
+                    uma conversa com você para jogarem juntos, onde e quando quiserem.</p>
+            </div>
+        </div>
+
+        <form>
+            <div class="form-row">
+                <div class="col-md-4">
+                    <label for="firstName">Nome</label>
+                    <input type="text" class="form-control" name="firstName" id="firstName" placeholder="Nome" required
+                        minlength="3">
+                </div>
+                <div class="col-md-8">
+                    <label for="mail">E-mail</label>
+                    <input type="email" class="form-control" id="mail" placeholder="E-mail" required email>
+                </div>
+                <div class="col-md-12 mt-4">
+                    <label for="know">Conhecimento</label>
+                    <select id="know" class="form-control" required>
+                        <option selected disabled>Nível de Jogo</option>
+                        <option>Iniciante</option>
+                        <option>Intermediário</option>
+                        <option>Avançado</option>
+                        <option>Mestre</option>
+                    </select>
+                </div>
+                <div class="col-md-12 mt-4">
+                    <label for="message">Mensagem</label>
+                    <textarea class="form-control" id="message" rows="4" placeholder="Deixe sua mensagem" required
+                        minlength="10"></textarea>
+                </div>
+            </div>
+            <div class="btn-group ml-auto d-flex justify-content-end">
+                <button type="reset" class="btn btn-outline-secondary mt-4 mr-3">Limpar</button>
+                <button type="submit" class="btn btn-outline-secondary mt-4">Enviar</button>
+            </div>
+        </form>
+    </div>
+</main>
